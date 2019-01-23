@@ -5,7 +5,7 @@
 */
 
 //Format date
-function get_vi_date_format(dateObject) {
+function zl_get_vi_date_format(dateObject) {
     var d = new Date(dateObject);
     var day = d.getDate();
     var month = d.getMonth() + 1;
@@ -21,7 +21,7 @@ function get_vi_date_format(dateObject) {
     return date;
 };
 //Convert string to date
-function convert_vi_to_date(str_date) {
+function zl_convert_vi_to_date(str_date) {
     str_date = str_date.split("/");
     return new Date(str_date[2], str_date[1] - 1, str_date[0]);
 }
